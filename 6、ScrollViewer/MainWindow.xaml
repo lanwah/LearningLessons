@@ -1,0 +1,15 @@
+﻿<Window x:Class="_6_ScrollViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_6_ScrollViewer"
+        mc:Ignorable="d"
+        Title="6、ScrollViewer布局" Height="450" Width="800">
+    <Grid>
+        <!-- HorizontalScrollBarVisibility水平滚动条是否显示默认为Hidden, VerticalScrollBarVisibility垂直滚动条是否显示 默认为Visible -->
+        <ScrollViewer HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Auto">
+            <TextBlock Text="This is a sample text." Width="1024" Height="768"/>
+        </ScrollViewer>
+    </Grid>
+</Window>

@@ -1,0 +1,69 @@
+﻿<Window x:Class="_5_WrapPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_5_WrapPanel"
+        mc:Ignorable="d"
+        Title="5、WrapPanel布局" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Margin" Value="5"></Setter>
+            <Setter Property="Padding" Value="10"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <WrapPanel Grid.Row="0" Margin="10">
+            <Button Content="Button1"></Button>
+            <Button Content="Button2"></Button>
+            <Button Content="Button3"></Button>
+            <Button Content="Button4"></Button>
+            <Button Content="Button5"></Button>
+            <Button Content="Button6"></Button>
+            <Button Content="Button7"></Button>
+            <Button Content="Button8"></Button>
+            <Button Content="Button9"></Button>
+            <Button Content="Button10"></Button>
+            <Button Content="Button11"></Button>
+            <Button Content="Button12"></Button>
+            <Button Content="Button13"></Button>
+            <Button Content="Button14"></Button>
+            <Button Content="Button15"></Button>
+            <Button Content="Button16"></Button>
+            <Button Content="Button17"></Button>
+            <Button Content="Button18"></Button>
+            <Button Content="Button19"></Button>
+            <Button Content="Button20"></Button>
+        </WrapPanel>
+
+        <Border Grid.Row="1" BorderThickness="1" BorderBrush="Black" Margin="10" Padding="10">
+        <WrapPanel  Orientation="Vertical">
+            <Button Content="Button1"></Button>
+            <Button Content="Button2"></Button>
+            <Button Content="Button3"></Button>
+            <Button Content="Button4"></Button>
+            <Button Content="Button5"></Button>
+            <Button Content="Button6"></Button>
+            <Button Content="Button7"></Button>
+            <Button Content="Button8"></Button>
+            <Button Content="Button9"></Button>
+            <Button Content="Button10"></Button>
+            <Button Content="Button11"></Button>
+            <Button Content="Button12"></Button>
+            <Button Content="Button13"></Button>
+            <Button Content="Button14"></Button>
+            <Button Content="Button15"></Button>
+            <Button Content="Button16"></Button>
+            <Button Content="Button17"></Button>
+            <Button Content="Button18"></Button>
+            <Button Content="Button19"></Button>
+            <Button Content="Button20"></Button>
+            </WrapPanel>
+        </Border>
+    </Grid>
+</Window>

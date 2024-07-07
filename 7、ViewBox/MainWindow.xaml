@@ -1,0 +1,22 @@
+﻿<Window x:Class="_7_ViewBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_7_ViewBox"
+        mc:Ignorable="d"
+        Title="7、ViewBox布局" Height="450" Width="800">
+    <Grid>
+        <Viewbox Stretch="Uniform">
+            <StackPanel>
+                <TextBlock Text="ViewBox控件"  FontSize="30"/>
+                <TextBlock Text="Stretch：获取或设置拉伸模式以决定该组件中的内容以怎样的形式填充该组件的已有空间。具体设置值如下："  FontSize="30"/>
+                <TextBlock Text="None：不进行拉伸，按子元素设置的长宽显示。"  FontSize="30"/>
+                <TextBlock Text="Uniform：按原比例缩放子元素，使得一边不足，另一边恰好填充"  FontSize="30"/>
+                <TextBlock Text="Fill：缩放子元素，使得子元素的长变为Viewbox的长，宽变为Viewbox的宽"  FontSize="30"/>
+                <TextBlock Text="UniformToFill：按原比例缩放子元素，使得子元素一边恰好填充，另一边超出Viewbox的区域"  FontSize="30"/>
+                <TextBlock Text="Stretch默认值为Uniform。"  FontSize="30"/>
+            </StackPanel>
+        </Viewbox>
+    </Grid>
+</Window>
